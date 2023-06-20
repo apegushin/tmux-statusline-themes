@@ -1,0 +1,32 @@
+# Tmux status line for `tomorrow` color scheme.
+
+# Status bar colors.
+set-window-option -g status-style fg=colour231,bg=colour252,none
+
+# Window list colors.
+set-window-option -g window-status-style fg=default,bg=colour61,none
+set-window-option -g window-status-current-style fg=default,bg=colour147,bold
+set-window-option -g window-status-activity-style fg=default,bg=yellow,none
+
+# Pane divider colors.
+set-option -g pane-border-style fg=brightyellow,bg=default
+set-option -g pane-active-border-style fg=yellow,bg=default
+
+# Command-line messages colors.
+set-option message-style fg=colour231,bg=colour243
+
+# Set left and right sections.
+set-option -g status-left-length 20
+set-option -g status-left "#[fg=default,bg=colour65] #S #(whoami)@#H"
+set-option -g status-right "#[fg=default,bg=colour65] #[fg=colour223]%l:%M:%S %p | %a %b %d %Y"
+
+# Set format of items in window list.
+setw -g window-status-format " #I:#W#F "
+setw -g window-status-current-format " #I:#W#F "
+
+# Set alignment of windows list.
+set-option -g status-justify centre
+
+# Identify activity in non-current windows.
+set-window-option -g monitor-activity on
+set-option -g visual-activity on
