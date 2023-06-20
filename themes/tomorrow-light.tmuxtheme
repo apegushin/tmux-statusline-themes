@@ -17,8 +17,8 @@ set-option message-style fg=colour231,bg=colour243
 
 # Set left and right sections.
 set-option -g status-left-length 20
-set-option -g status-left "#[fg=default,bg=colour65] #S #(whoami)@#H"
-set-option -g status-right "#[fg=default,bg=colour65] #[fg=colour223]%l:%M:%S %p | %a %b %d %Y"
+set-option -g status-left "#[fg=default,bg=colour65] #S #(whoami)@#H "
+set-option -g status-right "#[fg=default,bg=colour65] #[fg=colour223]%l:%M:%S %p | %a %b %d %Y "
 
 # Set format of items in window list.
 setw -g window-status-format " #I:#W#F "
